@@ -3,7 +3,7 @@ import { ColorModeScript, theme } from '@chakra-ui/react';
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html>
       <Head />
       <body>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />

@@ -1,0 +1,14 @@
+{
+  "texts": [
+    {
+      "locale": "en-US",
+      "title": "Sample Title For the First Blog Post in English",
+      "description": "This is the first blog post in English published on the blog"
+    },
+    {
+      "locale": "pt-BR",
+      "title": "Titulo teste pt-BR",
+      "description": "Primeiro post pt-BR"
+    }
+  ]
+}
