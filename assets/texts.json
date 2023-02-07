@@ -2,13 +2,11 @@
   "texts": [
     {
       "locale": "en-US",
-      "title": "Sample Title For the First Blog Post in English",
-      "description": "This is the first blog post in English published on the blog"
+      "nav": ["About", "Work" ,"Skills", "Resume"]
     },
     {
       "locale": "pt-BR",
-      "title": "Titulo teste pt-BR",
-      "description": "Primeiro post pt-BR"
+      "nav": ["Sobre", "Experiência", "Competências", "Curriculo"]
     }
   ]
 }
