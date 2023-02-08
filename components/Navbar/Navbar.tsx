@@ -22,7 +22,7 @@ interface NavProps {
 
 export default function Navbar({ nav }: NavProps) {
     const { isOpen, onToggle } = useDisclosure();
-    const { locales } = useRouter();
+    const { locales, asPath } = useRouter();
     return (
         <header>
             <nav>
@@ -50,7 +50,8 @@ export default function Navbar({ nav }: NavProps) {
                                 <>
                                     <Box
                                         as={Link}
-                                        href={locales[0]}>
+                                        href={asPath}
+                                        locale={locales[0]}>
                                         <Image
                                             alt={'pt-BR'}
                                             src={'/us.svg'}
@@ -61,7 +62,8 @@ export default function Navbar({ nav }: NavProps) {
                                     </Box>
                                     <Box
                                         as={Link}
-                                        href={locales[1]}>
+                                        href={asPath}
+                                        locale={locales[1]}>
                                         <Image
                                             alt={'pt-BR'}
                                             src={'/br.svg'}

@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { Button, Image, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, Image, Stack, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 
 interface NavProps {
@@ -7,7 +7,7 @@ interface NavProps {
 }
 
 export const DesktopNav = ({ nav }: NavProps) => {
-    const { locales } = useRouter();
+    const { locales, asPath } = useRouter();
     return (
         <Stack
             direction={'row'}
@@ -55,7 +55,7 @@ export const DesktopNav = ({ nav }: NavProps) => {
             </Button>
             {locales &&
                 <>
-                    <Text as={Link} href={locales[0]}>
+                    <Box as={Link} href={asPath} locale={locales[0]}>
                         <Image
                             alt={'pt-BR'}
                             src={'/us.svg'}
@@ -63,8 +63,8 @@ export const DesktopNav = ({ nav }: NavProps) => {
                             borderRadius={'md'}
                         >
                         </Image>
-                    </Text>
-                    <Text as={Link} href={locales[1]}>
+                    </Box>
+                    <Box as={Link} href={asPath} locale={locales[1]}>
                         <Image
                             alt={'pt-BR'}
                             src={'/br.svg'}
@@ -72,7 +72,7 @@ export const DesktopNav = ({ nav }: NavProps) => {
                             borderRadius={'md'}
                         >
                         </Image>
-                    </Text>
+                    </Box>
                 </>
             }
         </Stack>
