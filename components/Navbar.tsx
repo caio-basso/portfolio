@@ -27,7 +27,7 @@ interface NavItem {
 
 export default function Navbar({ nav }: NavProps) {
     const { isOpen, onToggle } = useDisclosure();
-    const { locale, locales, asPath } = useRouter();
+    const { locales } = useRouter();
     return (
         <header>
             <nav>
@@ -59,7 +59,7 @@ export default function Navbar({ nav }: NavProps) {
                         >
                             {locales &&
                                 <>
-                                    <a href={locales[0] + asPath}>
+                                    <a href={locales[0]}>
                                         <Image
                                             alt={'pt-BR'}
                                             src={'/us.svg'}
@@ -68,7 +68,7 @@ export default function Navbar({ nav }: NavProps) {
                                         >
                                         </Image>
                                     </a>
-                                    <a href={locales[1] + asPath}>
+                                    <a href={locales[1]}>
                                         <Image
                                             alt={'pt-BR'}
                                             src={'/br.svg'}
@@ -108,7 +108,7 @@ export default function Navbar({ nav }: NavProps) {
 }
 
 const DesktopNav = ({ nav }: NavProps) => {
-    const { locale, locales, asPath } = useRouter();
+    const { locales } = useRouter();
     return (
         <Stack
             direction={'row'}
