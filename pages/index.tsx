@@ -2,6 +2,7 @@ import Head from 'next/head';
 import textsJson from '@/assets/texts.json';
 import { useRouter } from 'next/router';
 import Navbar from '@/components/Navbar';
+import About from '@/components/About';
 
 export default function Home() {
     const { locale, locales, asPath } = useRouter();
@@ -17,6 +18,7 @@ export default function Home() {
             {textsJson.texts.filter(text => text.locale === locale).map(filteredText => (
                 <div key={filteredText.locale}>
                     <Navbar nav={filteredText.nav}/>
+                    <About />
                 </div>
             ))}
         </div>
