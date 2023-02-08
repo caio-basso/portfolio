@@ -13,7 +13,7 @@ export default function About({ texts }: AboutProps) {
                 w={'100vw'}
                 h={'100vh'}
                 px={'7vw'}
-                py={'15vh'}
+                pt={'15vh'}
             >
                 {/* Mobile and Tablets*/}
                 <Box
