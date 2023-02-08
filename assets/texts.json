@@ -2,13 +2,13 @@
   "texts": [
     {
       "locale": "en-US",
-      "nav": ["About", "Work" ,"Skills", "Resume"],
-      "texts": ["Hey, I'm Caio Basso.", "A Web Developer currently living Curitiba, Brazil."]
+      "nav": ["About", "Work" ,"Skills", "Contact"],
+      "texts": ["Hey, I'm Caio Basso.", "A Web Developer currently living Curitiba, Brazil.", "Let's work together!"]
     },
     {
       "locale": "pt-BR",
-      "nav": ["Sobre", "Experiência", "Competências", "Curriculo"],
-      "texts": ["Olá, sou Caio Basso", "Web Developer morando atualmente em Curitiba, Brasil."]
+      "nav": ["Sobre", "Experiência", "Competências", "Contato"],
+      "texts": ["Olá, sou Caio Basso.", "Web Developer morando atualmente em Curitiba, Brasil.", "Vamos trabalhar juntos!"]
     }
   ]
 }
