@@ -19,18 +19,36 @@ export const DesktopNav = ({ nav }: NavProps) => {
                 direction={'row'}
                 gap={'20px'}
             >
-                <Text>
+                <Text
+                    _hover={{
+                        textDecoration: 'underline',
+                    }}
+                >
                     {nav[0]}
                 </Text>
-                <Text>
+                <Text
+                    _hover={{
+                        textDecoration: 'underline',
+                    }}
+                >
                     {nav[1]}
                 </Text>
-                <Text>
+                <Text
+                    _hover={{
+                        textDecoration: 'underline',
+                    }}
+                >
                     {nav[2]}
                 </Text>
             </Stack>
             <Button
-                variant={'outline'}
+                variant={'solid'}
+                borderRadius={'20px'}
+                bg={'green.400'}
+                _hover={{
+                    bg: 'green.200',
+                    textDecoration: 'underline',
+                }}
             >
                 {nav[3]}
             </Button>
