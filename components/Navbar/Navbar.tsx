@@ -13,6 +13,7 @@ import { useRouter } from 'next/router';
 import { HamburgerIcon, CloseIcon, } from '@chakra-ui/icons';
 import { DesktopNav } from '@/components/Navbar/DesktopNav';
 import { MobileNav } from '@/components/Navbar/MobileNav';
+import { Logo } from '@/components/Logo/Logo';
 
 interface NavProps {
     nav: string[];
@@ -29,15 +30,10 @@ export default function Navbar({ nav }: NavProps) {
                     h={'70px'}
                     display={'flex'}
                     alignItems={'center'}
-                    px={'40px'}
+                    px={'7vw'}
                     bg={'gray.600'}
                 >
-                    <Text
-                        fontFamily={'unset'}
-                        fontSize={'2xl'}
-                    >
-                        Caio Basso
-                    </Text>
+                    <Logo />
                     <Spacer />
                     <Stack
                         direction={'row'}

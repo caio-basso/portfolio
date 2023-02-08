@@ -2,7 +2,7 @@ import Head from 'next/head';
 import textsJson from '@/assets/texts.json';
 import { useRouter } from 'next/router';
 import Navbar from '@/components/Navbar/Navbar';
-import About from '@/components/About';
+import About from '@/components/About/About';
 
 export default function Home() {
     const { locale, locales, asPath } = useRouter();
