@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import { ColorModeScript, theme } from '@chakra-ui/react';
+import { ColorModeScript } from '@chakra-ui/react';
+import { theme } from '@/theme/theme';
 
 export default function Document() {
   return (

@@ -5,7 +5,7 @@ export const Logo = () => {
         <Box>
             <Text
                 fontSize={'4xl'}
-                fontWeight={'400'}
+                fontWeight={'300'}
                 width={'200px'}
                 align={'start'}
             >
@@ -27,7 +27,7 @@ export const Logo = () => {
                 </Text>
                 <Divider
                     borderRadius={'20px'}
-                    borderWidth={'1px'}
+                    borderColor={'black'}
                     width={'37%'}
                 />
             </Stack>

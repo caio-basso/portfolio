@@ -31,7 +31,6 @@ export default function Navbar({ nav }: NavProps) {
                     display={'flex'}
                     alignItems={'center'}
                     px={'7vw'}
-                    bg={'gray.600'}
                 >
                     <Logo />
                     <Spacer />
