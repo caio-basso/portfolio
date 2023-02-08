@@ -44,9 +44,10 @@ export const DesktopNav = ({ nav }: NavProps) => {
             <Button
                 variant={'solid'}
                 borderRadius={'20px'}
-                bg={'green.400'}
+                bgGradient={'linear(to-tl, green.700, green.400)'}
+                color={'white'}
                 _hover={{
-                    bg: 'green.200',
+                    bgGradient: 'linear(to-tl, green.600, green.300)',
                     textDecoration: 'underline',
                 }}
             >

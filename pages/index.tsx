@@ -18,7 +18,7 @@ export default function Home() {
             {textsJson.texts.filter(text => text.locale === locale).map(filteredText => (
                 <div key={filteredText.locale}>
                     <Navbar nav={filteredText.nav}/>
-                    <About />
+                    <About texts={filteredText.texts}/>
                 </div>
             ))}
         </div>
