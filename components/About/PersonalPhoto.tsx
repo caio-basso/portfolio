@@ -4,7 +4,7 @@ export const PersonalPhoto = () => {
     return (
         <>
             <Box
-                display={{ base: 'none', md: 'flex', lg: 'flex'}}
+                display={{ base: 'none', md: 'none', lg: 'flex'}}
                 boxSize={'400px'}
                 borderColor={'white'}
                 borderWidth={'6px'}
@@ -24,7 +24,7 @@ export const PersonalPhoto = () => {
             </Box>
 
             <Box
-                display={{ base: 'flex', md: 'none', lg: 'none'}}
+                display={{ base: 'flex', md: 'flex', lg: 'none'}}
                 boxSize={'300px'}
                 borderColor={'white'}
                 borderWidth={'6px'}

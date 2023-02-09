@@ -1,4 +1,4 @@
-import { Box, Container, Text, Center, Image } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import { PersonalPhoto } from '@/components/About/PersonalPhoto';
 import { PersonalText } from '@/components/About/PersonalText';
 
@@ -13,7 +13,7 @@ export default function About({ texts }: AboutProps) {
                 w={'100vw'}
                 h={'100vh'}
                 px={'7vw'}
-                pt={'15vh'}
+                pt={{ base: '7vh' , lg: '15vh'}}
             >
                 {/* Mobile and Tablets*/}
                 <Box
