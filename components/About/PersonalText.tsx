@@ -10,12 +10,13 @@ export const PersonalText = ({texts}: AboutProps) => {
         <Container mx={'0px'}>
             <Text
                 as={TypeAnimation}
-                sequence={[texts[0], 2000, '']}
+                sequence={[texts[0], 2000, texts[3], 2000, '']}
                 repeat={Infinity}
                 bgGradient={'linear(to-t, green.700, green.500)'}
                 bgClip={'text'}
                 fontSize={'6xl'}
                 fontWeight={'800'}
+                h={'180px'}
             />
             <Text
                 bg={'dark.800'}
