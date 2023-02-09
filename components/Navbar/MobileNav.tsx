@@ -9,7 +9,7 @@ export const MobileNav = ({ nav }: NavProps) => {
     return (
         <Stack
             p={4}
-            h={'15vh'}
+            h={'25vh'}
             display={{ md: 'none' }}>
             <MobileNavItem label={nav[0]} href={'#'+nav[0]} />
             <MobileNavItem label={nav[1]} href={'#'+nav[1]} />
