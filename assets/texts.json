@@ -3,14 +3,14 @@
     {
       "locale": "en-US",
       "nav": ["About", "Work" ,"Skills", "Contact"],
-      "about": ["Hey, I'm Caio Basso.", "A Web Developer currently living Curitiba, Brazil.", "Let's work together!"],
+      "about": ["Hey, I'm Caio Basso.", "I'm a Web Developer currently living Curitiba, Brazil.", "Let's work together!", "Welcome to my Portfolio!!"],
       "contact": ["Name", "Email", "Subject","Message", "Submit", "Contact Me"],
       "footer": "All rights reserved"
     },
     {
       "locale": "pt-BR",
       "nav": ["Sobre", "Experiência", "Competências", "Contato"],
-      "about": ["Olá, sou Caio Basso.", "Web Developer morando atualmente em Curitiba, Brasil.", "Vamos trabalhar juntos!"],
+      "about": ["Olá, sou Caio Basso.", "Sou um Web Developer morando atualmente em Curitiba, Brasil.", "Vamos trabalhar juntos!", "Bem-vindo ao meu Portfólio!!"],
       "contact": ["Nome", "Email", "Assunto", "Mensagem", "Enviar", "Entre em Contato"],
       "footer": "Todos os direitos reservados"
     }
