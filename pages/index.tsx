@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import Navbar from '@/components/Navbar/Navbar';
 import About from '@/components/About/About';
 import Contact from '@/components/Contact/Contact';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
     const { locale } = useRouter();
@@ -19,8 +20,9 @@ export default function Home() {
             {textsJson.texts.filter(text => text.locale === locale).map(filteredText => (
                 <div key={filteredText.locale}>
                     <Navbar nav={filteredText.nav}/>
-                    <About texts={filteredText.texts}/>
+                    <About texts={filteredText.about}/>
                     <Contact fields={filteredText.contact}/>
+                    <Footer text={filteredText.footer}/>
                 </div>
             ))}
         </div>
