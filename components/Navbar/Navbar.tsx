@@ -2,17 +2,19 @@ import {
     Container,
     Spacer,
     Stack,
-    Text,
     Image,
     useDisclosure,
     Flex,
     IconButton,
     Collapse,
+    Box,
 } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 import { HamburgerIcon, CloseIcon, } from '@chakra-ui/icons';
 import { DesktopNav } from '@/components/Navbar/DesktopNav';
 import { MobileNav } from '@/components/Navbar/MobileNav';
+import { Logo } from '@/components/Logo/Logo';
+import Link from 'next/link';
 
 interface NavProps {
     nav: string[];
@@ -20,7 +22,7 @@ interface NavProps {
 
 export default function Navbar({ nav }: NavProps) {
     const { isOpen, onToggle } = useDisclosure();
-    const { locales } = useRouter();
+    const { locales, asPath } = useRouter();
     return (
         <header>
             <nav>
@@ -29,15 +31,9 @@ export default function Navbar({ nav }: NavProps) {
                     h={'70px'}
                     display={'flex'}
                     alignItems={'center'}
-                    px={'40px'}
-                    bg={'gray.600'}
+                    px={'7vw'}
                 >
-                    <Text
-                        fontFamily={'unset'}
-                        fontSize={'2xl'}
-                    >
-                        Caio Basso
-                    </Text>
+                    <Logo />
                     <Spacer />
                     <Stack
                         direction={'row'}
@@ -52,7 +48,10 @@ export default function Navbar({ nav }: NavProps) {
                         >
                             {locales &&
                                 <>
-                                    <a href={locales[0]}>
+                                    <Box
+                                        as={Link}
+                                        href={asPath}
+                                        locale={locales[0]}>
                                         <Image
                                             alt={'pt-BR'}
                                             src={'/us.svg'}
@@ -60,8 +59,11 @@ export default function Navbar({ nav }: NavProps) {
                                             borderRadius={'md'}
                                         >
                                         </Image>
-                                    </a>
-                                    <a href={locales[1]}>
+                                    </Box>
+                                    <Box
+                                        as={Link}
+                                        href={asPath}
+                                        locale={locales[1]}>
                                         <Image
                                             alt={'pt-BR'}
                                             src={'/br.svg'}
@@ -69,7 +71,7 @@ export default function Navbar({ nav }: NavProps) {
                                             borderRadius={'md'}
                                         >
                                         </Image>
-                                    </a>
+                                    </Box>
                                 </>
                             }
                         </Flex>

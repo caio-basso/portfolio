@@ -20,13 +20,13 @@ export const MobileNavItem = ({ label, href }: NavItem) => {
                 borderRadius={'md'}
                 _hover={{
                     textDecoration: 'none',
-                    backgroundColor: 'rgba(255, 255, 255, .10)',
+                    backgroundColor: 'rgba(72, 187, 120, 1)',
                     borderRadius: 'md'
                 }}>
                 <Text
                     fontWeight={600}
                     pl={'10px'}
-                    color={'white'}>
+                >
                     {label}
                 </Text>
             </Flex>

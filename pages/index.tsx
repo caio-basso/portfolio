@@ -2,10 +2,12 @@ import Head from 'next/head';
 import textsJson from '@/assets/texts.json';
 import { useRouter } from 'next/router';
 import Navbar from '@/components/Navbar/Navbar';
-import About from '@/components/About';
+import About from '@/components/About/About';
+import Contact from '@/components/Contact/Contact';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
-    const { locale, locales, asPath } = useRouter();
+    const { locale } = useRouter();
 
     return (
     <>
@@ -18,7 +20,9 @@ export default function Home() {
             {textsJson.texts.filter(text => text.locale === locale).map(filteredText => (
                 <div key={filteredText.locale}>
                     <Navbar nav={filteredText.nav}/>
-                    <About />
+                    <About texts={filteredText.about}/>
+                    <Contact fields={filteredText.contact}/>
+                    <Footer text={filteredText.footer}/>
                 </div>
             ))}
         </div>
