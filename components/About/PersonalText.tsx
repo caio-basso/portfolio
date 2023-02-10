@@ -1,5 +1,7 @@
-import { Text, Container, Button } from '@chakra-ui/react';
+import { Text, Container, Button, Box, Icon, Center } from '@chakra-ui/react';
 import { TypeAnimation } from 'react-type-animation';
+import { CiLinkedin } from 'react-icons/ci';
+import { VscGithub } from 'react-icons/vsc';
 
 interface AboutProps {
     texts: string[];
@@ -26,21 +28,64 @@ export const PersonalText = ({texts}: AboutProps) => {
             >
                 {texts[1]}
             </Text>
-            <Button
-                variant={'solid'}
-                borderRadius={'20px'}
-                bgGradient={'linear(to-tl, dark.700, dark.800)'}
-                color={'white'}
-                mt={'20px'}
-                fontWeight={'600'}
-                w={'300px'}
-                _hover={{
-                    bgGradient: 'linear(to-tl, green.600, green.300)',
-                    textDecoration: 'underline',
-                }}
+            <Box
+                display={'flex'}
+                alignItems={'center'}
+                justifyContent={{base: 'center', lg: 'start'}}
             >
-                {texts[2]}
-            </Button>
+                <Button
+                    variant={'solid'}
+                    borderRadius={'20px'}
+                    bgGradient={'linear(to-tl, dark.700, dark.800)'}
+                    color={'white'}
+                    mt={'20px'}
+                    fontWeight={'600'}
+                    w={'300px'}
+                    _hover={{
+                        bgGradient: 'linear(to-tl, green.600, green.300)',
+                    }}
+                >
+                    {texts[2]}
+                </Button>
+                <Center
+                    w={'40px'}
+                    h={'40px'}
+                    bg={'red'}
+                    mt={'20px'}
+                    ml={'10px'}
+                    bgGradient={'linear(to-tl, dark.700, dark.800)'}
+                    borderRadius={'20px'}
+                    _hover={{
+                        bgGradient: 'linear(to-tl, green.600, green.300)',
+                    }}
+                >
+                    <Icon
+                        as={CiLinkedin}
+                        w={7}
+                        h={7}
+                        color='white'
+                    />
+                </Center>
+                <Center
+                    w={'40px'}
+                    h={'40px'}
+                    bg={'red'}
+                    borderRadius={'20px'}
+                    mt={'20px'}
+                    ml={'10px'}
+                    bgGradient={'linear(to-tl, dark.700, dark.800)'}
+                    _hover={{
+                        bgGradient: 'linear(to-tl, green.600, green.300)',
+                    }}
+                >
+                    <Icon
+                        as={VscGithub}
+                        w={7}
+                        h={7}
+                        color='white'
+                    />
+                </Center>
+            </Box>
         </Container>
     )
 }
