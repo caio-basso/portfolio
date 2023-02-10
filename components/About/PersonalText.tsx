@@ -48,6 +48,8 @@ export const PersonalText = ({texts}: AboutProps) => {
                     {texts[2]}
                 </Button>
                 <Center
+                    as={'a'}
+                    href={'https://linkedin.com/in/caiobasso/'}
                     w={'40px'}
                     h={'40px'}
                     bg={'red'}
@@ -67,6 +69,8 @@ export const PersonalText = ({texts}: AboutProps) => {
                     />
                 </Center>
                 <Center
+                    as={'a'}
+                    href={'https://github.com/caio-basso'}
                     w={'40px'}
                     h={'40px'}
                     bg={'red'}
