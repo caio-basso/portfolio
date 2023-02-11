@@ -41,8 +41,10 @@ export const PersonalText = ({texts}: AboutProps) => {
                     mt={'20px'}
                     fontWeight={'600'}
                     w={'300px'}
+                    transition={'all .2s ease'}
                     _hover={{
                         bgGradient: 'linear(to-tl, green.600, green.300)',
+                        transform: 'scale(1.05)'
                     }}
                 >
                     {texts[2]}
@@ -57,8 +59,10 @@ export const PersonalText = ({texts}: AboutProps) => {
                     ml={'10px'}
                     bgGradient={'linear(to-tl, dark.700, dark.800)'}
                     borderRadius={'20px'}
+                    transition={'all .2s ease'}
                     _hover={{
                         bgGradient: 'linear(to-tl, green.600, green.300)',
+                        transform: 'scale(1.1)'
                     }}
                 >
                     <Icon
@@ -78,8 +82,10 @@ export const PersonalText = ({texts}: AboutProps) => {
                     mt={'20px'}
                     ml={'10px'}
                     bgGradient={'linear(to-tl, dark.700, dark.800)'}
+                    transition={'all .2s ease'}
                     _hover={{
                         bgGradient: 'linear(to-tl, green.600, green.300)',
+                        transform: 'scale(1.1)'
                     }}
                 >
                     <Icon
