@@ -2,7 +2,9 @@ import { Box, Divider, Stack, Text } from '@chakra-ui/react';
 
 export const Logo = () => {
     return (
-        <Box>
+        <Box
+            pb={'10px'}
+        >
             <Text
                 fontSize={'4xl'}
                 fontWeight={'300'}
