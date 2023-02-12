@@ -15,6 +15,9 @@ export const PersonalPhoto = () => {
                 outline={'solid 2px'}
                 outlineColor={'black'}
                 mt={{md: '40px', lg: '0px'}}
+                transition={'all .2s ease'}
+                filter={'brightness(110%)'}
+                _hover={{ transform: 'scale(1.07)' }}
             >
                 <Image
                     alt={'Teste'}
@@ -35,6 +38,9 @@ export const PersonalPhoto = () => {
                 outline={'solid 2px'}
                 outlineColor={'black'}
                 mt={'40px'}
+                transition={'all .2s ease'}
+                filter={'brightness(110%)'}
+                _hover={{ transform: 'scale(1.07)' }}
             >
                 <Image
                     alt={'Teste'}
