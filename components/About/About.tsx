@@ -11,7 +11,7 @@ export default function About({ texts }: AboutProps) {
         <>
             <Box
                 w={'100vw'}
-                h={'100vh'}
+                h={{base: '110vh', lg: '100vh'}}
                 px={'7vw'}
                 pt={{ base: '7vh' , lg: '15vh'}}
             >
