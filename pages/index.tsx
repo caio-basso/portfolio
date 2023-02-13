@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import About from '@/components/About/About';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
+import Projects from '@/components/Projects/Projects';
 
 export default function Home() {
     const { locale } = useRouter();
@@ -21,6 +22,7 @@ export default function Home() {
                 <div key={filteredText.locale}>
                     <Navbar nav={filteredText.nav}/>
                     <About texts={filteredText.about}/>
+                    <Projects/>
                     <Contact fields={filteredText.contact}/>
                     <Footer text={filteredText.footer}/>
                 </div>
