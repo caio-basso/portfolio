@@ -3,7 +3,10 @@ import { ProjectCard } from '@/components/Projects/ProjectCard';
 
 export default function Projects() {
     return (
-        <>
+        <Box
+            w={'100vw'}
+            bg={'green.600'}
+        >
             <Heading
                 bg={'green.600'}
                 pt={'50px'}
@@ -16,21 +19,23 @@ export default function Projects() {
                     Projects
                 </Center>
             </Heading>
-            <SimpleGrid
-                spacing={4}
-                templateColumns='repeat(auto-fit, minmax(300px, 1fr))'
-                w={'100vw'}
-                py={'80px'}
-                px={'100px'}
-                bg={'green.600'}
-            >
-                <ProjectCard heading={'alo 1'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor doloremque eius eos eveniet excepturi ipsa iste laborum magnam maiores minus nam nostrum pariatur perspiciatis quam quas quia quibusdam quisquam ratione recusandae sapiente, voluptates? A, alias dolore eos error et fuga odio odit optio porro quo sit tempora ullam vero? Animi autem ipsum recusandae! Ab accusamus aliquam asperiores autem blanditiis, dolor eaque esse nam obcaecati officiis, quo repellendus, sapiente sint. Ab amet autem corporis debitis ea, enim eum facere fugiat inventore laboriosam libero porro sequi, sit?'}/>
-                <ProjectCard heading={'alo 2'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor doloremque eius eos eveniet excepturi ipsa iste laborum magnam maiores minus nam nostrum pariatur perspiciatis quam quas quia quibusdam quisquam ratione recusandae sapiente, voluptates? A, alias dolore eos error et fuga odio odit optio porro quo sit tempora ullam vero? Animi autem ipsum recusandae! Ab accusamus aliquam asperiores autem blanditiis, dolor eaque esse nam obcaecati officiis, quo repellendus, sapiente sint. Ab amet autem corporis debitis ea, enim eum facere fugiat inventore laboriosam libero porro sequi, sit?'}/>
-                <ProjectCard heading={'alo 3'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor doloremque eius eos eveniet excepturi ipsa iste laborum magnam maiores minus nam nostrum pariatur perspiciatis quam quas quia quibusdam quisquam ratione recusandae sapiente, voluptates? A, alias dolore eos error et fuga odio odit optio porro quo sit tempora ullam vero? Animi autem ipsum recusandae! Ab accusamus aliquam asperiores autem blanditiis, dolor eaque esse nam obcaecati officiis, quo repellendus, sapiente sint. Ab amet autem corporis debitis ea, enim eum facere fugiat inventore laboriosam libero porro sequi, sit?'}/>
-                <ProjectCard heading={'alo 4'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor doloremque eius eos eveniet excepturi ipsa iste laborum magnam maiores minus nam nostrum pariatur perspiciatis quam quas quia quibusdam quisquam ratione recusandae sapiente, voluptates? A, alias dolore eos error et fuga odio odit optio porro quo sit tempora ullam vero? Animi autem ipsum recusandae! Ab accusamus aliquam asperiores autem blanditiis, dolor eaque esse nam obcaecati officiis, quo repellendus, sapiente sint. Ab amet autem corporis debitis ea, enim eum facere fugiat inventore laboriosam libero porro sequi, sit?'}/>
-                <ProjectCard heading={'alo 5'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor doloremque eius eos eveniet excepturi ipsa iste laborum magnam maiores minus nam nostrum pariatur perspiciatis quam quas quia quibusdam quisquam ratione recusandae sapiente, voluptates? A, alias dolore eos error et fuga odio odit optio porro quo sit tempora ullam vero? Animi autem ipsum recusandae! Ab accusamus aliquam asperiores autem blanditiis, dolor eaque esse nam obcaecati officiis, quo repellendus, sapiente sint. Ab amet autem corporis debitis ea, enim eum facere fugiat inventore laboriosam libero porro sequi, sit?'}/>
-                <ProjectCard heading={'alo 6'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor doloremque eius eos eveniet excepturi ipsa iste laborum magnam maiores minus nam nostrum pariatur perspiciatis quam quas quia quibusdam quisquam ratione recusandae sapiente, voluptates? A, alias dolore eos error et fuga odio odit optio porro quo sit tempora ullam vero? Animi autem ipsum recusandae! Ab accusamus aliquam asperiores autem blanditiis, dolor eaque esse nam obcaecati officiis, quo repellendus, sapiente sint. Ab amet autem corporis debitis ea, enim eum facere fugiat inventore laboriosam libero porro sequi, sit?'}/>
-            </SimpleGrid>
-        </>
+            <Center>
+                <SimpleGrid
+                    spacing={7}
+                    templateColumns={{ base: 'repeat(1, 1fr)', md:'repeat(2, 1fr)' ,lg: 'repeat(3, 1fr)'}}
+                    w={'1500px'}
+                    py={'90px'}
+                    px={'100px'}
+                    bg={'green.600'}
+                >
+                    <ProjectCard heading={'alo 1'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor  '}/>
+                    <ProjectCard heading={'alo 2'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor  '}/>
+                    <ProjectCard heading={'alo 3'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor  '}/>
+                    <ProjectCard heading={'alo 4'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor  '}/>
+                    <ProjectCard heading={'alo 5'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor  '}/>
+                    <ProjectCard heading={'alo 6'} body={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, atque dignissimos dolor eius modi nemo similique. A accusantium alias assumenda autem consectetur deleniti dolor  '}/>
+                </SimpleGrid>
+            </Center>
+        </Box>
     )
 }
